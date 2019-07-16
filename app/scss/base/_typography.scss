@@ -1,0 +1,38 @@
+body {
+    color: $body-text-color;
+    font-family: 'Source Sans Pro', Arial, sans-serif;
+    font-size: 22px;
+    line-height: 1;
+    font-weight: 400;
+}
+
+b,
+strong {
+    font-weight: 700;
+}
+
+i,
+.italic,
+em {
+    font-style: italic;
+}
+
+.light {
+    font-weight: 300;
+}
+
+.regular {
+    font-weight: 400;
+}
+
+.semibold {
+    font-weight: 600;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.black {
+    font-weight: 900;
+}
