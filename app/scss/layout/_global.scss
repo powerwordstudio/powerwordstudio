@@ -1,0 +1,25 @@
+[hidden] {
+    display: none;
+}
+
+body {
+    background: $body-background-color
+}
+
+.wrapper {
+    @extend %clearfix;
+    margin: 0 auto;
+    padding: 0 20px;
+    @include md {
+        padding: 0 40px;
+    }
+    &.large {
+        max-width: 1800px;
+    }
+    &.small {
+        max-width: 1200px;
+    }
+    &.center {
+        text-align: center;
+    }
+}

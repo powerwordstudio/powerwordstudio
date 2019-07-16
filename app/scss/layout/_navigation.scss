@@ -1,0 +1,77 @@
+.menu {
+    @extend %clearfix;
+    text-transform: uppercase;
+}
+
+//HEADER
+.header-navigation {
+    width: 100%;
+    @include lg {
+        width: auto;
+    }
+        #navigation-button {
+            position: absolute;
+            top: 50px;
+            right: 20px;
+            padding: 0 15px;
+            border: 2px solid #d6dee0;
+            border-radius: 5px;
+            @include lg {
+                display: none;
+            }
+        }
+        .menu {
+        display: none;
+            @include lg {
+                display: block;
+            }
+        &.is-active {
+            display: block;
+        }
+        > li {
+            float: left;
+            width: 50%;
+        }
+        a {
+            display: block;
+            padding: 10px;
+            color: $header-text-color;
+            text-align: center;
+            span {
+                border-bottom: 3px solid transparent;
+            }
+            &:hover span {
+                border-bottom-color: $color-green;
+            }
+        }
+        @include lg {
+            > li {
+                width: auto;
+                &:not(:last-of-type) {
+                    margin-right: 10px;
+                }
+            }
+            a {
+                padding: 10px;
+                color: $header-text-color;
+                &.current {
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
+
+//FOOOTER
+.footer-navigation .menu {
+    font-size: 16px;
+    text-align: center;
+    @extend .bold;
+    > li {
+        display: inline;
+        margin: 0 10px;
+    }
+    a {
+        padding: 10px;
+    }
+}
