@@ -19,4 +19,14 @@
             height: auto;
         }
     }
+    figure {
+        @include prefix(border-radius, 10px, webkit ms);
+        overflow: hidden;
+        background-color: $color-white;
+        box-shadow: 0 1px 1px rgba($color-black,0.1),0 2px 2px rgba($color-black,0.1); //Option 1
+        box-shadow: 0 1px 10px 0 rgba($color-black,.1) //Option 2
+    }
+    figcaption {
+        padding: 20px 10px;
+    }
 }

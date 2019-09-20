@@ -13,3 +13,10 @@
       *zoom: 1;
     }
 }
+
+@mixin prefix($property, $value, $prefixes: ()) {
+  @each $prefix in $prefixes {
+    #{'-' + $prefix + '-' + $property}: $value;
+    #{$property}: $value;
+  }
+}
