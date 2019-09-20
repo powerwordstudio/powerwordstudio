@@ -1,26 +1,26 @@
 .section-header {
-    display: flex;
+    // display: flex;
     margin: 40px 0;
     &:first-of-type {
         margin-top: 0;
     }
-    align-items: center;
-    font-size: 24px;
-    font-weight: bold;
+    // align-items: center;
+    font-size: 32px;
+    @extend .regular;
 
-    &:before,
-    &:after {
-        content: '';
-        flex: 0 1 100%;
-        border-bottom: 1px solid $body-text-color;
-        margin: 0 40px;
-    }
+    // &:before,
+    // &:after {
+    //     content: '';
+    //     flex: 0 1 100%;
+    //     border-bottom: 1px solid $body-text-color;
+    //     margin: 0 40px;
+    // }
 
-    &:before {
-        margin-left: 0;
-    }
+    // &:before {
+    //     margin-left: 0;
+    // }
 
-    &:after {
-        margin-right: 0;
-    }
+    // &:after {
+    //     margin-right: 0;
+    // }
 }
