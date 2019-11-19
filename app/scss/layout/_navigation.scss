@@ -37,11 +37,23 @@
             padding: 10px;
             color: $header-text-color;
             text-align: center;
+            .header-text-light & {
+                color: $color-white;
+            }
+            .header-text-dark & {
+                color: $color-black;
+            }
             span {
                 border-bottom: 3px solid transparent;
             }
             &:hover span {
                 border-bottom-color: $color-green;
+                .header-text-dark & {
+                    border-bottom-color: $header-text-dark-color;
+                }
+                .header-text-light & {
+                    border-bottom-color: $header-text-light-color;
+                }
             }
         }
         @include lg {
@@ -68,10 +80,11 @@
     text-align: center;
     @extend .bold;
     > li {
-        display: inline;
+        display: inline-block;
         margin: 0 10px;
     }
     a {
+        display: inline-block;
         padding: 10px;
     }
 }

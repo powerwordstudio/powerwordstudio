@@ -1,11 +1,15 @@
 #site-header {
     @extend %clearfix;
     padding: 50px 0;
+    line-height: 50px;
+    color: $header-text-color;
     background: $header-background-color;
     box-shadow: 0 1px 1px rgba($color-black,0.1),0 2px 2px rgba($color-black,0.1); //Option 1
     box-shadow: 0 1px 10px 0 rgba($color-black,.1); //Option 2
-    line-height: 50px;
-    color: $header-text-color;
+    .page-project & {
+        background: transparent;
+        box-shadow: none;
+    }
 }
 
 .header-logo {
@@ -14,6 +18,13 @@
     text-transform: uppercase;
     letter-spacing: 4px;
     line-height: 70px;
+    color: $header-text-color;
+        .header-text-dark & {
+            color: $header-text-dark-color;
+        }
+        .header-text-light & {
+            color: $header-text-light-color;
+        }
     a {
         display: block;
     }
@@ -27,39 +38,15 @@
     float: left;
     margin: 15px 10px 0 0;
     fill: $color-green;
+    .header-text-dark & {
+        fill: $header-text-dark-color;
+    }
+    .header-text-light & {
+        fill: $header-text-light-color;
+    }
 }
 
 .header-navigation {
     float: right;
     font-size: 18px;
-}
-
-#site-introduction {
-    margin: 150px 0;
-    header {
-        margin-bottom: 50px;
-    }
-    h1 {
-        color: rgba($color-green, 0.75);
-        font-size: 72px;
-        line-height: 90px;
-        @extend .bold;
-        span {
-            display: block;
-            font-size: 200px;
-            line-height: 200px;
-        }
-    }
-    .intro-1 {
-        font-size: 36px;
-        line-height: 42px;
-        span {
-            @extend .bold;
-        }
-    }
-    .intro-2 {
-        font-size: 24px;
-        line-height: 30px;
-        @extend .light;
-    }
 }

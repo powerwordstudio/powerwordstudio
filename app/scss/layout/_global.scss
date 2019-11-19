@@ -3,7 +3,10 @@
 }
 
 body {
-    background: $body-background-color
+    background: $body-background-global-color;
+    &.page-home {
+        background: $body-background-home-color;
+    }
 }
 
 .wrapper {
@@ -22,4 +25,8 @@ body {
     &.center {
         text-align: center;
     }
+}
+
+p {
+    margin: 24px 0;
 }
