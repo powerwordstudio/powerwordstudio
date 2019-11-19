@@ -1,8 +1,10 @@
 #site-footer {
+    margin-top: 48px;
     padding: 40px 0;
     background: $footer-background-color;
     color: $footer-text-color;
     .copyright {
+        margin-top: 12px;
         font-size: 14px;
         color: rgba($footer-text-color, 0.6);
         text-align: center;

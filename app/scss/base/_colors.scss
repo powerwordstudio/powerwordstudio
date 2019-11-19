@@ -5,10 +5,13 @@ $color-black: rgba(0,0,0,1);
 
 $body-text-color: rgba(79,79,79,1);
 $header-text-color: rgba(79,79,79,1);
+$header-text-dark-color: $color-black;
+$header-text-light-color: $color-white;
 $footer-text-color: $color-white;
 
 $divider-color: $body-text-color;
 
-$body-background-color: rgba(240, 240, 240, 1);
-$header-background-color: rgba(255,255,255,1);
+$body-background-global-color: $color-white;
+$body-background-home-color: rgba(240, 240, 240, 1);
+$header-background-color: $color-white;
 $footer-background-color: rgba(51,51,51,1);

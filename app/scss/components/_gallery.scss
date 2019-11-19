@@ -28,5 +28,16 @@
     }
     .gallery-caption {
         padding: 20px 10px;
+        text-align: center;
+        h2 {
+
+        }
+        p {
+            max-width: 240px;
+            margin: 18px auto 0;
+            font-size: 18px;
+            line-height: 24px;
+            @extend .light;
+        }
     }
 }
